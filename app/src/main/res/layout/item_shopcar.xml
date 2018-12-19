@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <CheckBox
+        android:id="@+id/check_shopchild"
+        android:layout_width="40dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/item_img"
+        android:layout_width="100dp"
+        android:layout_height="130dp"
+        app:layout_constraintLeft_toRightOf="@id/check_shopchild"
+        android:src="@drawable/ic_launcher_background"
+        />
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/item_img"
+        android:text="1111"
+        android:textSize="24sp"
+        android:textColor="#000"
+        android:layout_marginLeft="15dp"
+        android:paddingTop="10dp"
+        />
+    <TextView
+        android:id="@+id/item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="111"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="20sp"
+        android:textColor="#ff0000"
+        app:layout_constraintLeft_toRightOf="@id/item_img"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="20dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="10dp"
+        >
+        <Button
+            android:id="@+id/jian"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="-"
+            />
+        <EditText
+            android:id="@+id/putin"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="1"
+            />
+        <Button
+            android:id="@+id/jia"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="+"
+            />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
